@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Productivity Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Productivity Hub</h1>
+
+        <div class="widget">
+            <h2>Time Tracker</h2>
+            <div id="stopwatch">00:00:00</div>
+            <div class="buttons">
+                <button id="startBtn">Start</button>
+                <button id="stopBtn">Stop</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+            <div class="save-time-section">
+                <select id="task-dropdown"></select>
+                <button id="saveTimeBtn">Save Time to Selected Task</button>
+            </div>
+        </div>
+
+        <div class="widget">
+            <h2>To-Do List <div class="loader" id="loader"></div></h2>
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Add a new task..." autocomplete="off">
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="task-list">
+                </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
